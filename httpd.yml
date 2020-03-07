@@ -1,0 +1,11 @@
+---
+   -name: httpd SYS65
+    hosts: httpd
+    become true
+    vars:
+       install_utilities: true
+       firewalld_enable
+     roles:
+    -clusterapps.httpd
+
+
