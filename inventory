@@ -1,0 +1,13 @@
+[webmin]
+ansible1
+
+[win]
+wks
+[win:vars]
+ansible_user=ca
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+ansible_winrm_port=5986
+
+
